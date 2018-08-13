@@ -1,6 +1,11 @@
 # DOM and Classes
 
-Use `jest` to write tests that prove the following
+Use `jest` to write tests that prove the following.
+
+## Setup
+
+* `package.json`, `.eslintrc`, `.gitignore`, `.travis.yml`, `lib` folder
+* `package.json` scripts for testing (see classwork example)
 
 ## 1. Object Prototype
 
@@ -26,8 +31,10 @@ constructor arguments have:
 
 1. The same prototype
 1. The same `speak` method
-1. Both have the same prototype.constructor value of `Animal`
+1. Both have the same obj.constructor.name value of `Animal`
 1. Different results from calling the `speak` method
+
+Lastly, assigning the `speak` method to a property called `speak` on an object literal of `{ name: 'literal', sound: 'meep' }`, and then test that calling it returns `'literal sez meep'`.
 
 ## 2. Variables, Arguments, Values, and References
 
