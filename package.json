@@ -4,7 +4,11 @@
   "description": "Using jest and reviewing JS dom",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "npm run jest",
+    "jest": "jest",
+    "test:watch": "npm run jest -- --watch"
   },
   "repository": {
     "type": "git",
