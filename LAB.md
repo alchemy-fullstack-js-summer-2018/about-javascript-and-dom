@@ -1,4 +1,4 @@
-# DOM and Classes
+# A Bit About JavaScript and The DOM
 
 ## Setup
 
