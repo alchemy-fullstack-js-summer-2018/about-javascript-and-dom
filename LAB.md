@@ -1,11 +1,13 @@
 # DOM and Classes
 
-Use `jest` to write tests that prove the following.
-
 ## Setup
 
 * `package.json`, `.eslintrc`, `.gitignore`, `.travis.yml`, `lib` folder
 * `package.json` scripts for testing (see classwork example)
+
+## Objective
+
+Use `jest` to write tests that prove the following.
 
 ## 1. Object Prototype
 
