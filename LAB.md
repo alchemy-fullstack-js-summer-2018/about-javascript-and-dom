@@ -44,4 +44,28 @@ corresponding parameter arguments and reassigning the argument in the function w
 1. Passing a variable that holds an object as an argument to a function and then assigning a property to the object inside
 the function will alter the original object to have the new property value.
 
-## Reentrant Code
+## DOM Manipulation
+
+### TextComponent
+
+Write a tested `TextComponent` class that:
+
+1. Takes an (optional) initial text value in its `constructor(text)`
+1. Returns a DOM TextNode from its `render` method that has it's `.data` property set to the initial text value (otherwise `''`)
+1. Has an `update(text)` method that will update the text value of the node (via the `.data` property).
+1. Calling render() a second time should _return the same TextNode_
+
+### ElementClasses
+
+Write a tested `ElementClasses` class that:
+
+1. Takes an element in its `constructor(element)`. It should throw if argument is missing or not an instance of `HTMLElement`
+1. Has an `add(className)` method that adds the `className` to the element
+1. Has a `remove(className)` method that removes the `className` from the element (safe to call if class doesn't have that `className`)
+
+## Rubric
+
+* Object Prototype **3pts**
+* Variable, Arguments, Values, References **3pts**
+* DOM Manipulation **3pts**
+* Clean, linted, readable code **1pt**
