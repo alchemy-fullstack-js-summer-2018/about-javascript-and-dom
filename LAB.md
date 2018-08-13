@@ -36,7 +36,7 @@ constructor arguments have:
 1. Both have the same obj.constructor.name value of `Animal`
 1. Different results from calling the `speak` method
 
-Lastly, assigning the `speak` method to a property called `speak` on an object literal of `{ name: 'literal', sound: 'meep' }`, and then test that calling it returns `'literal sez meep'`.
+BONUS: Assigning the `speak` method to a property called `speak` on an object literal of `{ name: 'literal', sound: 'meep' }`, and then test that calling it returns `'literal sez meep'`.
 
 ## 2. Variables, Arguments, Values, and References
 
