@@ -1,4 +1,4 @@
-const Animal = require('./animal');
+const Animal = require('../lib/animal');
 
 describe('Testing object prototypes', () => {
 

@@ -1,3 +1,5 @@
+// const TextComponent = require('../lib/dom');
+
 describe('Testing TextComponent', () => {
 
   it('Takes an (optional) initial text value in its `constructor(text)`', () => {
