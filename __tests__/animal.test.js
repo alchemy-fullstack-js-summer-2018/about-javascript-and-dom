@@ -1,6 +1,5 @@
 const Animal = require('../lib/AnimalClass');
 
-
 describe('Object prototypes: Two object instances...', () => {
   
   let frank;
