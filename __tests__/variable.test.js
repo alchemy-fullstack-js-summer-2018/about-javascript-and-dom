@@ -1,17 +1,30 @@
 
-
 describe('Variables, arguments, values, and references', () => {
 
-  it.skip('Reassigning a variable (number) changes the value of the variable', () => {
+  let numberFive;
+  let frank;
+  let newFrank;
 
+  beforeEach(() => {
+    numberFive = 5;
+    frank = { name: 'Frank', age: 4, type: 'Dog' };
+    newFrank = frank;
   });
 
-  it.skip('Reassigning a variable (object) changes the value of the variable', () => {
-
+  it('Reassigning a variable (number) changes the value of the variable', () => {
+    numberFive = 10;
+    expect(numberFive).toEqual(10);
   });
 
-  it.skip('Assigning a value (property of object) does not change the value of the variable', () => {
+  it('Reassigning a variable (object) changes the value of the variable', () => {
+    frank = { name: 'FRANK', type: 'Dog' };
+    expect(frank).toEqual({ name: 'FRANK', type: 'Dog' });
+  });
 
+  it('Assigning a value (property of object) does not change the value of the variable', () => {
+    frank.name = 'NEW Frank';
+    expect(newFrank).toEqual(frank);
+    expect(frank).toEqual({ name: 'NEW Frank', age: 4, type: 'Dog' });
   });
 
   it.skip('Passing a variable (number as argument) to function copies the value to the corresponding parameter arguments and reassigning the argument in the function will not alter the original variable value', () => {
