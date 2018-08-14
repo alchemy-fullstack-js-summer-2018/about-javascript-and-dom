@@ -1,4 +1,4 @@
-const TextComponent = require('../lib/TextComponent');
+const TextComponent = require('../lib/TextComponentClass');
 
 describe('Text component class', () => {
 
