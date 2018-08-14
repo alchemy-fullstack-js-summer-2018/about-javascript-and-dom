@@ -1,10 +1,13 @@
-// const TextComponent = require('../lib/dom');
+const TextComponent = require('../lib/dom');
 
 describe('Testing TextComponent', () => {
 
-  it('Takes an (optional) initial text value in its `constructor(text)`', () => {
-    
-    expect(true).toBe(true);
+  let newText = new TextComponent('Nissan');
+  
+  it.only('Takes an (optional) initial text value in its `constructor(text)`', () => {
+
+    console.log(newText.text);
+    expect(newText.text).toBe('Nissan');
   });
 
   it('Returns a DOM TextNode from its `render` method that has its `.data` property set to the initial text value (otherwise empty string).', () => {
