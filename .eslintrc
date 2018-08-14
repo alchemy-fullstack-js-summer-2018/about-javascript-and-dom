@@ -1,24 +1,17 @@
 {
     "parserOptions": {
       "ecmaVersion": 8,
-      "sourceType": "module",
-      "ecmaFeatures": {
-        "experimentalObjectRestSpread": true,
-        "module": true,
-        "jsx": true
-      }
+      "sourceType": "module"
     },
     "env": {
       "es6": true,
-      "browser": true,
-      "jest": true,
-      "node": true
+      "node": true,
+      "mocha": true,
+      "jest": true
     },
-    "extends": [
-      "eslint:recommended"
-    ],
+    "extends": ["eslint:recommended"],
     "rules": {
-        "no-console": "warn",
+        "no-console": "off",
         "indent": ["error", 2, { "SwitchCase": 1 }],
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
@@ -33,12 +26,11 @@
             "before": true, 
             "after": true,
             "overrides": {
-              "if": { "after": false },
-              "for": { "after": false },
-              "while": { "after": false },
-              "do": { "after": false },
-              "catch": { "after": false },
-              "switch": { "after": false }
+                "do": { "after": false },
+                "for": { "after": false },
+                "if": { "after": false },
+                "switch": { "after": false },
+                "while": { "after": false }
             } 
           }
         ],
