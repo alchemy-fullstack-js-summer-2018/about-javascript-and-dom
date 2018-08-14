@@ -1,6 +1,6 @@
 ## Javascript & DOM Lab
 
-## A lab to using Jest to test JavaScript
+## A lab using Jest to test JavaScript
 
 ### Developer
 Requires Node v10 or later.
