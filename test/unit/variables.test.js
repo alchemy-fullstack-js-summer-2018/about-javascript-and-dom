@@ -38,16 +38,20 @@ describe('Test Variables, Arguments, Values, and References', () => {
   });
 
   it('test when passing a variable that holds an object as an argument to a function and then assigning a property to the object inside the function will alter the original object to have the new property value', () => {
+    var flower = {
+      name: 'Bird of Paradise',
+      color: 'orange'
+    };
     var animal = {
       name: 'Lion',
       sound: 'roar',
       number: 2
     };
-    function sum(a, b) {
-      return a.number = a.number + b; 
+    function overwriteObj(obj1, obj2) {
+      return obj1 = obj2; 
     } 
-    sum(animal, 5);
-    expect(animal.number).not.toBe(2);
+    overwriteObj(flower, animal);
+    expect(animal).not.toBe(flower);
   });
 
   it('test when passing a variable that holds an object as an argument to a function and then assigning a property to the object inside the function will alter the original object to have the new property value', () => {
