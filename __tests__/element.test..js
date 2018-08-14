@@ -25,4 +25,17 @@ describe('Element Class', () => {
     expect(notElement).toThrow('Required: HTML Element');
   });
 
+  it('Adds a class to the element', () => {
+    createDiv.add('some_class');
+    expect(createDiv.element.classList).toContain('some_class');
+  });
+  
+  it('Removes a class from the element', () => {
+    createDiv.add('some_class');
+    createDiv.add('other_class');
+    expect(createDiv.element.classList).toContain('some_class');
+    createDiv.remove('some_class');
+    expect(createDiv.element.classList).not.toContain('some_class');
+  });
+
 });
