@@ -7,7 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "npm run jest",
+    "jest": "jest",
+    "test:watch": "npm run jest -- --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/arthurjen/about-javascript-and-dom/issues"
   },
-  "homepage": "https://github.com/arthurjen/about-javascript-and-dom#readme"
+  "homepage": "https://github.com/arthurjen/about-javascript-and-dom#readme",
+  "dependencies": {
+    "jest": "^23.5.0"
+  }
 }
