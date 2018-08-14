@@ -4,8 +4,7 @@ describe('Testing TextComponent', () => {
 
   let newText = new TextComponent('Nissan');
   
-  it.only('Takes an (optional) initial text value in its `constructor(text)`', () => {
-
+  it('Takes an (optional) initial text value in its `constructor(text)`', () => {
     console.log(newText.text);
     expect(newText.text).toBe('Nissan');
   });
