@@ -27,7 +27,7 @@ describe('Test Variables, Arguments, Values, and References', () => {
     expect(flowerVar).toBe(flower);
   });
 
-  it.only('test when passing a variable that holds a number as an argument to a function copies the value to the corresponding parameter arguments and reassigning the argument in the function will not alter the original variable value.', () => {
+  it('test when passing a variable that holds a number as an argument to a function copies the value to the corresponding parameter arguments and reassigning the argument in the function will not alter the original variable value.', () => {
     var num = 2;
     function sum(a, b) {
       return a = a + b; 
@@ -37,17 +37,31 @@ describe('Test Variables, Arguments, Values, and References', () => {
     expect(num).toBe(2);
   });
 
-  it('test when Passing a variable that holds an object as an argument to a function copies the object reference to the corresponding parameter arguments and reassigning the argument in the function will not alter the original variable.', () => {
+  it('test when passing a variable that holds an object as an argument to a function and then assigning a property to the object inside the function will alter the original object to have the new property value', () => {
     var animal = {
       name: 'Lion',
       sound: 'roar',
       number: 2
     };
     function sum(a, b) {
-      return a = a + b; 
+      return a.number = a.number + b; 
     } 
-    sum(animal.number, 5);
-    expect(animal.number).toBe(2);
+    sum(animal, 5);
+    expect(animal.number).not.toBe(2);
   });
+
+  it('test when passing a variable that holds an object as an argument to a function and then assigning a property to the object inside the function will alter the original object to have the new property value', () => {
+    var animal = {
+      name: 'Lion',
+      sound: 'roar',
+      number: 2
+    };
+    function sum(a, b) {
+      return a.number = a.number + b; 
+    } 
+    sum(animal, 5);
+    expect(animal.number).toBe(7);
+  });
+
 
 });  
