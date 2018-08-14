@@ -17,12 +17,13 @@ describe('Test Variables, Arguments, Values, and References', () => {
     expect(flower).not.toEqual({ name: 'Bird of Paradise' });  
   });
 
-  // it('does not change value of variable that holds an object when property is assigned a value', () => {
-  //   var flower = {
-  //     name: 'Bird of Paradise'
-  //   };
-  //   expect(flower).toEqual({ name: 'Bird of Paradise' });
-  //   flower.name = 'Daffodil';
-  //   expect(flower).toEqual({ name: 'Bird of Paradise' });
-  // });
+  it('does not change value of variable that holds an object when property is assigned a value', () => {
+    var flower = {
+      name: 'Bird of Paradise'
+    };
+    var flowerVar = flower;
+    flower.color = 'red'; 
+    flower.name = 'Daffodil';
+    expect(flowerVar).toBe(flower);
+  });
 });  
