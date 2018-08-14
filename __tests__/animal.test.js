@@ -1,4 +1,4 @@
-const Animal = require('../lib/animalClass');
+const Animal = require('../lib/AnimalClass');
 
 
 describe('Object prototypes: Two object instances...', () => {
