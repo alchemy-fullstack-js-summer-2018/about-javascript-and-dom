@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/arthurjen/about-javascript-and-dom#readme",
   "dependencies": {
+    "eslint": "^5.3.0",
     "jest": "^23.5.0"
   }
 }
