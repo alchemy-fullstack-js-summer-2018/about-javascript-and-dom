@@ -9,9 +9,8 @@ Requires Node v10 or later.
 ### How to get started
 * Fork repository, clone locally, navigate to repository directory,
 * Download all the files with `npm i`,
-* To test, run `npm test`. 
-
-More to come...
+* To test, run `npm test`.
+* For lab details, go to [LAB.md](LAB.md). 
 
 ## Contributor
 [Mariah Adams](https://github.com/MariahAdams)
