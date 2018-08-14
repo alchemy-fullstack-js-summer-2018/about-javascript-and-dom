@@ -1,15 +1,6 @@
+const Animal = require('../lib/objectPrototype');
 
 describe('Object Prototype Suite', () => {
-  class Animal {
-    constructor(name, sound) {
-      this.name = name;
-      this.sound = sound;
-    }
-    
-    speak() {
-      return `${this.name} sez ${this.sound}`;
-    }
-  }
 
   const lion = new Animal('Simba', 'roar');
   const giraffe = new Animal('Manilla', 'hum');
