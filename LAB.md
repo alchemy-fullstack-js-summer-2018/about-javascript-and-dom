@@ -10,7 +10,7 @@
 Use `jest` to write tests that prove the following.
 
 ## 1. Object Prototype
-
+ sr: dunder proto
 Given the following class:
 
 ```js
@@ -36,7 +36,8 @@ constructor arguments have:
 1. Both have the same obj.constructor.name value of `Animal`
 1. Different results from calling the `speak` method
 
-BONUS: Assigning the `speak` method to a property called `speak` on an object literal of `{ name: 'literal', sound: 'meep' }`, and then test that calling it returns `'literal sez meep'`.
+BONUS: Lastly, assigning the `speak` method to a property called `speak` on an object literal of `{ name: 'literal', sound: 'meep' }`, and then test that calling it returns `'literal sez meep'`.
+=======
 
 ## 2. Variables, Arguments, Values, and References
 
@@ -65,7 +66,7 @@ Write a tested `TextComponent` class that:
 1. Calling render() a second time should _return the same TextNode_
 
 ### ElementClasses
-
+sr: document.createTextNode
 Write a tested `ElementClasses` class that:
 
 1. Takes an element in its `constructor(element)`. It should throw if argument is missing or not an instance of `HTMLElement`
