@@ -17,14 +17,13 @@ describe('Test Variables, Arguments, Values, and References', () => {
     expect(flower).not.toEqual({ name: 'Bird of Paradise' });  
   });
 
-  it('does not change value of variable that holds an object when property is assigned a value', () => {
+  it.only('does not change value of variable that holds an object when property is assigned a value', () => {
     var flower = {
       name: 'Bird of Paradise'
     };
-    var flowerVar = flower;
-    flower.color = 'red'; 
+    var flowerVar = flower.name;
     flower.name = 'Daffodil';
-    expect(flowerVar).toBe(flower);
+    expect(flowerVar).toBe('Bird of Paradise');
   });
 
   it('test when passing a variable that holds a number as an argument to a function copies the value to the corresponding parameter arguments and reassigning the argument in the function will not alter the original variable value.', () => {
