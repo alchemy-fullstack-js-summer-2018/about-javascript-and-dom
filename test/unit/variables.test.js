@@ -17,7 +17,7 @@ describe('Test Variables, Arguments, Values, and References', () => {
     expect(flower).not.toEqual({ name: 'Bird of Paradise' });  
   });
 
-  it.only('does not change value of variable that holds an object when property is assigned a value', () => {
+  it('does not change value of variable that holds an object when property is assigned a value', () => {
     var flower = {
       name: 'Bird of Paradise'
     };
