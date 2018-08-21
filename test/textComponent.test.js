@@ -2,10 +2,10 @@ const TextComponent = require('../lib/textComponent');
 
 describe('Testing TextComponent', () => {
 
-  let newText = new TextComponent('Nissan');
+  let newText = new TextComponent('Skyline');
   
   it('Takes an (optional) initial text value in its `constructor(text)`', () => {
-    expect(newText.text).toBe('Nissan');
+    expect(newText.text).toBe('Skyline');
   });
 
   it('Returns a DOM TextNode from its `render` method that has its `.data` property set to the initial text value (otherwise empty string).', () => {
@@ -14,8 +14,7 @@ describe('Testing TextComponent', () => {
   });
 
   it('Has an `update(text)` method that will update the text value of the node (via the `.data` property).', () => {
-    let textNode = document.createTextNode('Skyline');
-    textNode.data = 'Subaru';
+    let textNode = newText.update('Subaru');    
     expect(textNode.data).toBe('Subaru');
   });
 
