@@ -1,4 +1,4 @@
-const elementClasses = require('../lib/ElementClasses');
+const elementClasses = require('../lib/elementClasses');
 
 describe('Testing ElementClasses', () => {
 
